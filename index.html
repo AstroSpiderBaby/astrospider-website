@@ -1,54 +1,45 @@
-<!DOCTYPE html>
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/yaqehuq/8/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
- 
 <!DOCTYPE html> 
 <html>       
 <head>      
   <meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensure responsiveness -->
+  <meta name="viewport" content="width=device-width">
   <title>AstroSpider</title> 
   <style>
     body {
       margin: 0;
-      background-color: rgb(38, 38, 38);
-      color: white;
+      background-color: rgb(38, 38, 38); /* Sets the background to dark gray */
+      color: white; /* Sets the text color for better contrast */
       font-family: Arial, sans-serif;
-      padding-top: 70px;
+      padding-top: 70px; /* Adds padding to account for the top bar */
     }
 
     .top-bar {
       width: 100%;
-      height: 70px;
-      background-color: rgb(103, 106, 230);
+      height: 70px; /* Height of the top bar */
+      background-color: rgb(103, 106, 230); /* Sets the bar color */
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 1000;
+      z-index: 1000; /* Ensures the bar is always on top */
     }
 
     .logo {
       position: absolute;
-      top: 90px;
-      left: 20px;
-      width: 200px;
+      top: 90px; /* Positions the logo below the top bar */
+      left: 20px; /* Moves the logo to the left */
+      width: 200px; /* Adjusts the logo size */
     }
 
     /* Navigation Menu */
     .navbar {
-      margin-top: 70px;
-      text-align: center; /* Center-align the navbar items */
+      margin-top: 70px; /* Pushes the navbar below the top bar */
+      margin-left: 300px; /* Aligns the navbar */
+      overflow: hidden;
+      background-color: transparent;
     }
 
     .navbar a {
-      display: inline-block;
+      float: left;
       font-size: 16px;
       color: white;
       padding: 14px 16px;
@@ -56,7 +47,8 @@ Released under the MIT license: http://jsbin.mit-license.org
     }
 
     .dropdown {
-      display: inline-block;
+      float: left;
+      overflow: hidden;
     }
 
     .dropdown .dropbtn {
@@ -103,12 +95,16 @@ Released under the MIT license: http://jsbin.mit-license.org
     }
 
     .content {
-      margin-top: 200px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: 200px; /* Adds more spacing between logo and content */
+      margin-left: 240px; /* Positions the content to the right of the logo */
       max-width: 600px;
-      position: relative;
-      z-index: 1;
+      position: relative; /* Allows independent positioning of the content */
+      z-index: 1; /* Ensures the text is on top of the background */
+    }
+
+    .position-left {
+      text-align: left; /* Aligns text to the left */
+      width: 100%; /* Ensures it spans across the container */
     }
 
     .mission-statement {
@@ -131,46 +127,11 @@ Released under the MIT license: http://jsbin.mit-license.org
     /* Background Image Styling */
     .background-image {
       position: absolute;
-      top: 200px;
-      left: 800px;
+      top: 200px; /* Adjusted to move image behind the text */
+      left: 800px; /* Adjusted to align image behind the text */
       width: 613px;
       height: 586px;
-      z-index: -1;
-    }
-
-    /* Responsive Design - For Phones */
-    @media (max-width: 600px) {
-      body {
-        padding-top: 50px;
-      }
-
-      .logo {
-        top: 50px; /* Adjust logo position */
-        width: 150px; /* Reduce logo size on mobile */
-      }
-
-      .navbar {
-        margin-left: 0;
-        text-align: center; /* Make navbar center-aligned on mobile */
-      }
-
-      .content {
-        margin-left: 10px; /* Add space on smaller screens */
-        margin-right: 10px;
-        max-width: 100%; /* Ensure content takes full width on small screens */
-      }
-
-      .mission-statement {
-        font-size: 48px; /* Adjust font size for smaller screens */
-      }
-
-      .subheading {
-        font-size: 18px;
-      }
-
-      .background-image {
-        display: none; /* Hide the background image on mobile */
-      }
+      z-index: -1; /* Ensures it's behind the text */
     }
   </style>
 </head>
@@ -190,16 +151,16 @@ Released under the MIT license: http://jsbin.mit-license.org
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="data-engineering.html">Data Engineering</a>
-        <a href="#BI Solutions">BI Solutions</a>
-        <a href="#Structured Training">Structured Training</a>
+        <a href="data-engineering.html">Data Engineering</a> <!-- Updated to point to the data-engineering.html page -->
+        <a href="bi-solutions.html">BI Solutions</a>
+        <a href="structured-training.html">Structured Training</a>
       </div>
     </div> 
-    <a href="#product-partners">Product Partners</a>
-    <a href="#rpa-calculator">RPA Calculator</a>
-    <a href="#careers">Careers</a>
-    <a href="#about">About</a>
-    <a href="#contact-us">Contact Us</a>
+    <a href="product-partners.html">Product Partners</a>
+    <a href="rpa-calculator.html">RPA Calculator</a>
+    <a href="careers.html">Careers</a>
+    <a href="about.html">About</a>
+    <a href="contact-us.html">Contact Us</a>
   </div>
   
   <div class="content position-left">
@@ -217,3 +178,5 @@ Released under the MIT license: http://jsbin.mit-license.org
   </div>
 </body>
 </html>
+
+
