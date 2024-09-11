@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/yovegix/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+ 
+<html lang="en">      
+<head>      
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Engineering - AstroSpider</title> 
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%); /* Gradient from dark gray to new color */
+      color: white; 
+      font-family: Arial, sans-serif;
+      padding-top: 90px; /* Adjusted padding to ensure the top bar is not covered */
+    }
+
+    .top-bar {
+      width: 100%;
+      height: 70px; /* Height of the top bar */
+      background-color: rgb(103, 106, 230); /* Sets the bar color */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000; /* Ensures the bar is always on top */
+    }
+
+    .logo {
+      position: absolute;
+      top: 70px; /* Positions the logo just below the top bar */
+      left: 20px; /* Moves the logo to the left */
+      width: 200px; /* Adjusts the logo size */
+      z-index: 1001; /* Ensures the logo is always on top of other elements */
+    }
+
+    /* Navigation Menu */
+    .navbar {
+      margin-top: 70px; /* Pushes the navbar below the top bar */
+      margin-left: 300px; /* Aligns the navbar */
+      overflow: hidden;
+      background-color: transparent;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: rgb(103, 106, 200);
+    }
+
+    .content {
+      margin-top: 200px; /* Adds more spacing between logo and content */
+      margin-left: 240px; /* Positions the content to the right of the logo */
+      max-width: 800px; /* Allows content to span more width */
+      position: relative;
+      z-index: 1; /* Ensures the text stays on top */
+    }
+
+    .section-background {
+      background-color: #110a02; /* Background color for the red box area */
+      padding: 20px;
+    }
+
+    .heading {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    /* Image styling behind the content */
+    .right-image {
+      position: absolute;
+      width: 800px; /* Adjust image size as needed */
+      z-index: 0; /* Lower z-index to place it behind the content */
+      top: 520px; /* You can adjust 'top' to move the image up or down */
+      left: 900px; /* Use 'right' or 'left' to control horizontal position */
+    }
+  </style>
+</head>
+<body> 
+  <!-- Top Bar -->
+  <div class="top-bar"></div>
+  
+  <!-- Wrap the logo image in an anchor tag -->
+  <a href="index.html">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
+  </a>
+
+  <!-- Navigation Bar with Dropdowns -->
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Services 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="data-engineering.html">Data Engineering</a>
+        <a href="bi-solutions.html">BI Solutions</a>
+        <a href="structured-training.html">Structured Training</a>
+      </div>
+    </div> 
+    <a href="product-partners.html">Product Partners</a>
+    <a href="rpa-calculator.html">RPA Calculator</a>
+    <a href="careers.html">Careers</a>
+    <a href="about.html">About</a>
+    <a href="contact-us.html">Contact Us</a>
+  </div>
+  
+  <!-- Content for Data Engineering -->
+  <div class="section-background"> <!-- Background color added here -->
+    <div class="content">
+      <div class="heading">Data Engineering</div>
+      <div class="description">
+        At AstroSpider, our Data Engineering services provide cutting-edge solutions to help you manage and analyze your data efficiently. 
+        We specialize in utilizing industry-leading tools such as <strong>Databricks</strong> for scalable data processing, <strong>Snowflake</strong> for cloud data warehousing, 
+        and a range of other platforms to build robust data pipelines and architectures. From ETL development to advanced data analytics, we ensure your data is optimized for real-time reporting and decision-making.
+
+        Our services include:
+        <ul>
+          <li>Data pipeline design and optimization using Databricks, Spark, Airflow, and more.</li>
+          <li>Cloud data warehousing with Snowflake, AWS, GCP, and Azure</li>
+          <li>Database management and orchestration</li>
+          <li>Real-time analytics and data streaming</li>
+          <li>Advanced data modeling and architecture design</li>
+          <li>Integration with BI tools such as Power BI, Tableau, Qlik, and Spotfire</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image positioned on the right side behind the text -->
+  <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/This%20may%20be%20it.jfif" alt="Right-side Image" class="right-image">
+
+</body>
+</html>
+
+
+
+
