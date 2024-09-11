@@ -8,7 +8,7 @@ Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/yovegix/4/edit)
 Released under the MIT license: http://jsbin.mit-license.org
 -->
 <meta name="robots" content="noindex">
- 
+
 <html lang="en">      
 <head>      
   <meta charset="utf-8"> 
@@ -17,34 +17,33 @@ Released under the MIT license: http://jsbin.mit-license.org
   <style>
     body {
       margin: 0;
-      background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%); /* Gradient from dark gray to new color */
+      background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%);
       color: white; 
       font-family: Arial, sans-serif;
-      padding-top: 90px; /* Adjusted padding to ensure the top bar is not covered */
+      padding-top: 90px;
     }
 
     .top-bar {
       width: 100%;
-      height: 70px; /* Height of the top bar */
-      background-color: rgb(103, 106, 230); /* Sets the bar color */
+      height: 70px;
+      background-color: rgb(103, 106, 230);
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 1000; /* Ensures the bar is always on top */
+      z-index: 1000;
     }
 
     .logo {
       position: absolute;
-      top: 70px; /* Positions the logo just below the top bar */
-      left: 20px; /* Moves the logo to the left */
-      width: 200px; /* Adjusts the logo size */
-      z-index: 1001; /* Ensures the logo is always on top of other elements */
+      top: 70px;
+      left: 20px;
+      width: 200px;
+      z-index: 1001;
     }
 
-    /* Navigation Menu */
     .navbar {
-      margin-top: 70px; /* Pushes the navbar below the top bar */
-      margin-left: 300px; /* Aligns the navbar */
+      margin-top: 70px;
+      margin-left: 300px;
       overflow: hidden;
       background-color: transparent;
     }
@@ -106,15 +105,15 @@ Released under the MIT license: http://jsbin.mit-license.org
     }
 
     .content {
-      margin-top: 200px; /* Adds more spacing between logo and content */
-      margin-left: 240px; /* Positions the content to the right of the logo */
-      max-width: 800px; /* Allows content to span more width */
+      margin-top: 200px;
+      margin-left: 240px;
+      max-width: 800px;
       position: relative;
-      z-index: 1; /* Ensures the text stays on top */
+      z-index: 1;
     }
 
     .section-background {
-      background-color: #110a02; /* Background color for the red box area */
+      background-color: #110a02;
       padding: 20px;
     }
 
@@ -129,26 +128,22 @@ Released under the MIT license: http://jsbin.mit-license.org
       line-height: 1.8;
     }
 
-    /* Image styling behind the content */
     .right-image {
       position: absolute;
-      width: 800px; /* Adjust image size as needed */
-      z-index: 0; /* Lower z-index to place it behind the content */
-      top: 520px; /* You can adjust 'top' to move the image up or down */
-      left: 900px; /* Use 'right' or 'left' to control horizontal position */
+      width: 800px;
+      z-index: 0;
+      top: 205px;
+      left: 0;
     }
   </style>
 </head>
 <body> 
-  <!-- Top Bar -->
   <div class="top-bar"></div>
   
-  <!-- Wrap the logo image in an anchor tag -->
   <a href="index.html">
     <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
   </a>
 
-  <!-- Navigation Bar with Dropdowns -->
   <div class="navbar">
     <div class="dropdown">
       <button class="dropbtn">Services 
@@ -167,8 +162,7 @@ Released under the MIT license: http://jsbin.mit-license.org
     <a href="contact-us.html">Contact Us</a>
   </div>
   
-  <!-- Content for Data Engineering -->
-  <div class="section-background"> <!-- Background color added here -->
+  <div class="section-background">
     <div class="content">
       <div class="heading">Data Engineering</div>
       <div class="description">
@@ -189,12 +183,7 @@ Released under the MIT license: http://jsbin.mit-license.org
     </div>
   </div>
 
-  <!-- Image positioned on the right side behind the text -->
   <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/This%20may%20be%20it.jfif" alt="Right-side Image" class="right-image">
 
 </body>
 </html>
-
-
-
-
