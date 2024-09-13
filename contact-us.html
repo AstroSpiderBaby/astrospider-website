@@ -106,10 +106,11 @@
       position: relative;
     }
 
-  .section-background {
+    .section-background {
       background-color: rgb(38, 38, 38); /* Set this to match the body background */
       padding: 20px;
     }
+
     .heading {
       font-size: 48px;
       font-weight: bold;
@@ -155,6 +156,18 @@
     .contact-info {
       margin-top: 20px;
       font-size: 18px;
+      position: relative; /* Relative positioning for the box overlay */
+    }
+
+    /* Box for 38,38,38 Background */
+    .box-overlay {
+      position: absolute;
+      background-color: rgb(38, 38, 38); /* The box color */
+      width: 1200px; /* Width of the box */
+      height: 50px; /* Height of the box */
+      top: 80px; /* Position it below the phone number */
+      left: 0px; /* Align it to the left */
+      z-index: 1; /* Ensure the box is behind the content */
     }
 
     /* The image container */
@@ -167,8 +180,6 @@
       width: 400px; /* Adjust the size of the image */
       height: auto;
       position: absolute; /* Allow free positioning */
-      
-      /* You can adjust these to move the image */
       top: 0px; /* Adjust for moving up or down */
       left: 0px; /* Adjust for moving left or right */
     }
@@ -229,6 +240,9 @@
     <div class="contact-info">
       <p>Email: <a href="mailto:contact@AstroSpider.net" style="color: white;">contact@AstroSpider.net</a></p>
       <p>Phone: 1-833-774-3391 (1-800-Spidey1)</p>
+      
+      <!-- The small box with 38,38,38 background -->
+      <div class="box-overlay"></div>
     </div>
   </div>
 
