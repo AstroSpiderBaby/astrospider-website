@@ -1,28 +1,9 @@
 <!DOCTYPE html>
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/quxoqij/2/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/yovegix/4/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
-
 <html lang="en">      
 <head>      
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Engineering - AstroSpider</title> 
+  <title>Contact Us - AstroSpider</title> 
   <style>
     body {
       margin: 0;
@@ -144,6 +125,47 @@ Released under the MIT license: http://jsbin.mit-license.org
       top: 205px;
       left: 0;
     }
+
+    form {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: rgb(103, 106, 230);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: rgb(83, 86, 210);
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 18px;
+    }
   </style>
 </head>
 <body> 
@@ -174,11 +196,29 @@ Released under the MIT license: http://jsbin.mit-license.org
   <div class="section-background">
     <div class="content">
       <div class="heading">Contact Us</div>
-     
+
+      <form action="https://formspree.io/f/mvgpnrjj" method="POST">
+        <label>
+          Your Name:
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Your Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Your Message:
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="contact-info">
+        <p>Email: <a href="mailto:Teams@AstroSpider.net" style="color: white;">Teams@AstroSpider.net</a></p>
+        <p>Phone: 1-833-774-3391 (1-800-Spidey1)</p>
       </div>
     </div>
   </div>
 
- 
 </body>
 </html>
