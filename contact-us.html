@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us - AstroSpider</title> 
   <style>
-    body {
+   body {
       margin: 0;
-      background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%);
+      background-color: rgb(38, 38, 38); /* Set the body background color to match the navbar area */
       color: white; 
       font-family: Arial, sans-serif;
-      padding-top: 90px;
+      padding-top: 90px; /* Padding to account for fixed navbar */
     }
 
     .top-bar {
@@ -94,36 +94,26 @@
       background-color: rgb(103, 106, 200);
     }
 
-    .content {
+    .container {
+      display: flex; /* Flexbox to keep form and image aligned side by side */
       margin-top: 100px;
-      margin-left: 240px;
-      max-width: 800px;
-      position: relative;
-      z-index: 1;
+      padding: 20px;
+      gap: 20px;
     }
 
-    .section-background {
-      background-color: #110a02;
+    .form-container {
+      flex: 1; /* Keeps the form in place */
+      position: relative;
+    }
+
+  .section-background {
+      background-color: rgb(38, 38, 38); /* Set this to match the body background */
       padding: 20px;
     }
-
     .heading {
       font-size: 48px;
       font-weight: bold;
       margin-bottom: 20px;
-    }
-
-    .description {
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .right-image {
-      position: absolute;
-      width: 800px;
-      z-index: 0;
-      top: 205px;
-      left: 0;
     }
 
     form {
@@ -166,6 +156,22 @@
       margin-top: 20px;
       font-size: 18px;
     }
+
+    /* The image container */
+    .image-container {
+      position: relative;
+      flex: 1;
+    }
+
+    .right-image {
+      width: 400px; /* Adjust the size of the image */
+      height: auto;
+      position: absolute; /* Allow free positioning */
+      
+      /* You can adjust these to move the image */
+      top: 0px; /* Adjust for moving up or down */
+      left: 0px; /* Adjust for moving left or right */
+    }
   </style>
 </head>
 <body> 
@@ -194,29 +200,35 @@
   </div>
   
   <div class="section-background">
-    <div class="content">
-      <div class="heading">Contact Us</div>
+    <div class="container">
+      <div class="form-container">
+        <div class="heading">Contact Us</div>
 
-      <form action="https://formspree.io/f/mvgpnrjj" method="POST">
-        <label>
-          Your Name:
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Your Email:
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          Your Message:
-          <textarea name="message" required></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
-
-      <div class="contact-info">
-        <p>Email: <a href="mailto:contact@AstroSpider.net" style="color: white;">Teams@AstroSpider.net</a></p>
-        <p>Phone: 1-833-774-3391 (1-800-Spidey1)</p>
+        <form action="https://formspree.io/f/mvgpnrjj" method="POST">
+          <label>
+            Your Name:
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Your Email:
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Your Message:
+            <textarea name="message" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
       </div>
+
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Main%20Image.png" alt="Contact Image" class="right-image">
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <p>Email: <a href="mailto:contact@AstroSpider.net" style="color: white;">contact@AstroSpider.net</a></p>
+      <p>Phone: 1-833-774-3391 (1-800-Spidey1)</p>
     </div>
   </div>
 
