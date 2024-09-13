@@ -7,12 +7,11 @@
   <style>
     body {
       margin: 0;
-      background-color: rgb(38, 38, 38); /* Sets the background to dark gray */
-      color: white; /* Sets the text color for better contrast */
+      background: linear-gradient(to right, rgb(38, 38, 38) 40%, #110a02 100%);
+      color: white; 
       font-family: Arial, sans-serif;
-      padding-top: 70px; /* Adds padding to account for the top bar */
+      padding-top: 90px;
     }
-
     .top-bar {
       width: 100%;
       height: 70px; /* Height of the top bar */
@@ -94,12 +93,19 @@
       background-color: rgb(103, 106, 200);
     }
 
+    .section-background {
+      background-color: rgb(38, 38, 38); /* Section below content */
+      padding: 20px;
+      position: relative; /* Keeps everything positioned relative to the section */
+    }
+
     .content {
       margin-top: 200px; /* Adds more spacing between logo and content */
       margin-left: 240px; /* Positions the content to the right of the logo */
       max-width: 600px;
+      padding: 20px; /* Adds some padding to the content */
       position: relative; /* Allows independent positioning of the content */
-      z-index: 1; /* Ensures the text is on top of the background */
+      z-index: 2; /* Ensure content is in front of the box */
     }
 
     .position-left {
@@ -124,14 +130,25 @@
       line-height: 1.5;
     }
 
+    /* Box for 38,38,38 Background */
+    .box-overlay {
+      position: absolute;
+      background-color: rgb(38, 38, 38); /* The box color */
+      width: 2400px; /* Adjust width as needed */
+      height: 500px; /* Adjust height as needed */
+      top: 575px; /* Adjust the top position */
+      left: 350px; /* Adjust the left position */
+      z-index: 1; /* Ensure the box is behind the content but in front of the background */
+    }
+
     /* Background Image Styling */
     .background-image {
       position: absolute;
       top: 200px; /* Adjusted to move image behind the text */
-      left: 800px; /* Adjusted to align image behind the text */
+      left: 800px; /* Adjusted to align image */
       width: 613px;
       height: 586px;
-      z-index: -1; /* Ensures it's behind the text */
+      z-index: 3; /* Move image in front of the box */
     }
   </style>
 </head>
@@ -162,21 +179,28 @@
     <a href="about.html">About</a>
     <a href="contact-us.html">Contact Us</a>
   </div>
-  
-  <div class="content position-left">
-    <div class="mission-statement">Your Data.<br>Our Mission.</div>
-    <div class="subheading">Untangle your web.</div>
-    <div class="description">
-      AstroSpider brings together data engineering, data science, and business intelligence  
-      to empower organizations to unravel data webs to create new opportunities.
+
+  <!-- Section Background -->
+  <div class="section-background">
+
+    <!-- The Box with 38,38,38 Background positioned below content -->
+    <div class="box-overlay"></div>
+
+    <div class="content position-left">
+      <div class="mission-statement">Your Data.<br>Our Mission.</div>
+      <div class="subheading">Untangle your web.</div>
+      <div class="description">
+        AstroSpider brings together data engineering, data science, and business intelligence  
+        to empower organizations to unravel data webs to create new opportunities.
+      </div>
+    </div>
+
+    <!-- Background Image -->
+    <div class="background-image">
+      <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Main%20Image.png" alt="Space Spider Web Image">
     </div>
   </div>
 
-  <!-- Background Image -->
-  <div class="background-image">
-    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Main%20Image.png" alt="Space Spider Web Image">
-  </div>
 </body>
 </html>
-
 
