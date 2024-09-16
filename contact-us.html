@@ -129,14 +129,26 @@
       font-size: 16px;
     }
 
-    input, textarea {
-      width: 100%;
+    input[type="text"],
+    input[type="email"] {
+      width: 80%; /* Adjust the width for "Your Name" and "Your Email" */
       padding: 10px;
       margin-bottom: 10px;
       border: none;
       border-radius: 4px;
       background-color: #333;
       color: white;
+    }
+
+    textarea {
+      width: 100%; /* Full width for "Your Message" */
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: white;
+      height: 150px; /* Increased height for the message box */
     }
 
     button {
