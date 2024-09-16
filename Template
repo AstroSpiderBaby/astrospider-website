@@ -1,17 +1,18 @@
--<!DOCTYPE html> 
-<html>       
+<!DOCTYPE html>
+<html lang="en">      
 <head>      
   <meta charset="utf-8"> 
-  <meta name="viewport" content="width=device-width">
-  <title>AstroSpider</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - AstroSpider</title> 
   <style>
     body {
       margin: 0;
-      background: linear-gradient(to right, rgb(38, 38, 38) 40%, #110a02 100%);
+      background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%);
       color: white; 
       font-family: Arial, sans-serif;
       padding-top: 90px;
     }
+
     .top-bar {
       width: 100%;
       height: 70px;
@@ -24,12 +25,12 @@
 
     .logo {
       position: absolute;
-      top: 90px;
+      top: 70px;
       left: 20px;
       width: 200px;
+      z-index: 1001;
     }
 
-    /* Navigation Menu */
     .navbar {
       margin-top: 70px;
       margin-left: 300px;
@@ -93,75 +94,94 @@
       background-color: rgb(103, 106, 200);
     }
 
-    .section-background {
-      background-color: rgb(38, 38, 38);
-      padding: 20px;
-      position: relative;
-    }
-
     .content {
-      margin-top: 200px;
+      margin-top: 100px;
       margin-left: 240px;
-      max-width: 600px;
-      padding: 20px;
+      max-width: 800px;
       position: relative;
       z-index: 2;
     }
 
-    .position-left {
-      text-align: left;
+    .section-background {
+      background-color: #110a02;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .web-background-image {
+      display: block;
       width: 100%;
-    }
-
-    .mission-statement {
-      font-size: 72px;
-      font-weight: bold;
+      height: auto;
+      position: relative;
+      z-index: 2; /* Ensure the image is in front */
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 20px;
+      border: none; /* Removed the red border */
     }
 
-    .subheading {
-      font-size: 24px;
+    .heading {
+      font-size: 48px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
     .description {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    form {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
       font-size: 16px;
-      line-height: 1.5;
     }
 
-    /* Box for 38,38,38 Background */
-    .box-overlay {
-      position: absolute;
-      background-color: rgb(38, 38, 38);
-      width: 2400px;
-      height: 500px;
-      top: 575px;
-      left: 350px;
-      z-index: 1;
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #333;
+      color: white;
     }
 
-    /* Background Image Styling */
-    .background-image {
-      position: absolute;
-      top: 200px;
-      left: 800px;
-      width: 613px;
-      height: 586px;
-      z-index: 3;
+    button {
+      padding: 10px 20px;
+      background-color: rgb(103, 106, 230);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: rgb(83, 86, 210);
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body> 
-  <!-- Top Bar -->
   <div class="top-bar"></div>
   
-  <!-- Wrap the logo image in an anchor tag -->
   <a href="index.html">
     <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
   </a>
 
-  <!-- Navigation Bar with Dropdowns -->
   <div class="navbar">
     <div class="dropdown">
       <button class="dropbtn">Services 
@@ -174,48 +194,14 @@
       </div>
     </div> 
     <a href="our-web.html">Our Web</a>
-    <div class="dropdown">
-      <button class="dropbtn">Data Domain Expertise 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="healthcare.html">Healthcare</a>
-        <a href="pharmaceuticals.html">Pharmaceuticals</a>
-        <a href="intellectual-property.html">Intellectual Property</a>
-        <a href="time-series.html">Time Series</a>
-        <a href="geothermal-drilling.html">Geothermal Drilling</a>
-        <a href="manufacturing.html">Manufacturing</a>
-        <a href="financial.html">Financial</a>
-      </div>
-    </div>
+    <a href="data.html">Data Domain Expertise</a>
     <a href="careers.html">Careers</a>
     <a href="about.html">About</a>
     <a href="contact-us.html">Contact Us</a>
   </div>
+  
 
-  <!-- Section Background -->
-  <div class="section-background">
-    <!-- The Box with 38,38,38 Background positioned below content -->
-    <div class="box-overlay"></div>
-
-    <div class="content position-left">
-      <div class="mission-statement">Your Data.<br>Our Mission.</div>
-      <div class="subheading">Untangle your web.</div>
-      <div class="description">
-        AstroSpider brings together data engineering, data science, and business intelligence  
-        to empower organizations to unravel data webs to create new opportunities.
-      </div>
-    </div>
-
-    <!-- Background Image -->
-    <div class="background-image">
-      <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Main%20Image.png" alt="Space Spider Web Image">
-    </div>
-  </div>
 
 </body>
 </html>
-
-
-
 
