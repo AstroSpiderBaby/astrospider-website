@@ -29,7 +29,7 @@
       width: 200px;
     }
 
-    /* Navigation Menu */
+/* Navigation Menu */
     .navbar {
       margin-top: 70px;
       margin-left: 300px;
@@ -93,6 +93,7 @@
       background-color: rgb(103, 106, 200);
     }
 
+
     .section-background {
       background-color: rgb(38, 38, 38);
       padding: 20px;
@@ -125,6 +126,15 @@
       line-height: 1.5;
     }
 
+    .box-overlay {
+      position: absolute;
+      background-color: rgb(38, 38, 38);
+      width: 2400px;
+      height: 500px;
+      top: 575px;
+      left: 350px;
+      z-index: 1;
+    }
     /* Background Image Styling */
     .background-image {
       position: absolute;
@@ -173,9 +183,12 @@
     <a href="contact-us.html">Contact Us</a>
   </div>
 
-  <!-- Section Background -->
+ <!-- Section Background -->
   <div class="section-background">
-    <div class="content">
+    <!-- The Box with 38,38,38 Background positioned below content -->
+    <div class="box-overlay"></div>
+
+    <div class="content position-left">
       <div class="mission-statement">Your Data.<br>Our Mission.</div>
       <div class="subheading">Untangle your web.</div>
       <div class="description">
@@ -183,7 +196,7 @@
         to empower organizations to unravel data webs to create new opportunities.
       </div>
     </div>
-
+    
     <!-- Background Image -->
     <div class="background-image">
       <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Main%20Image.png" alt="Space Spider Web Image">
@@ -192,3 +205,5 @@
 
 </body>
 </html>
+
+
