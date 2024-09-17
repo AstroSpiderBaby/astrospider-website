@@ -1,23 +1,4 @@
 <!DOCTYPE html>
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/lenujaw/5/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/yovegix/4/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
-
 <html lang="en">      
 <head>      
   <meta charset="utf-8"> 
@@ -29,7 +10,7 @@ Released under the MIT license: http://jsbin.mit-license.org
       background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%);
       color: white; 
       font-family: Arial, sans-serif;
-      padding-top: 90px;
+      padding-top: 140px;
     }
 
     .top-bar {
@@ -44,14 +25,14 @@ Released under the MIT license: http://jsbin.mit-license.org
 
     .logo {
       position: absolute;
-      top: 70px;
+      top: 71px;
       left: 20px;
       width: 200px;
       z-index: 1001;
     }
 
     .navbar {
-      margin-top: 70px;
+      margin-top: 0;
       margin-left: 300px;
       overflow: hidden;
       background-color: transparent;
@@ -113,17 +94,17 @@ Released under the MIT license: http://jsbin.mit-license.org
       background-color: rgb(103, 106, 200);
     }
 
-    .content {
-      margin-top: 280px;
-      margin-left: 240px;
-      max-width: 800px;
-      position: relative;
-      z-index: 1;
-    }
-
     .section-background {
       background-color: #110a02;
       padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .content {
+      max-width: 60%;
     }
 
     .heading {
@@ -138,11 +119,9 @@ Released under the MIT license: http://jsbin.mit-license.org
     }
 
     .right-image {
-      position: absolute;
-      width: 500px;
-      z-index: 0;
-      top: 205px;
-      left: 0;
+      max-width: 35%;
+      height: auto;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -188,31 +167,26 @@ Released under the MIT license: http://jsbin.mit-license.org
   <div class="section-background">
     <div class="content">
       <div class="heading">Training Solutions</div>
-<div class="description">
-    At AstroSpider, we offer comprehensive training programs designed to equip teams with the knowledge and skills to excel in today’s data-driven world. 
-    We specialize in training for industry-leading tools such as <strong>Databricks</strong> for scalable data processing, <strong>Power BI</strong> for business intelligence reporting, 
-    and a range of other platforms to help you master data engineering and analytics technologies.
+      <div class="description">
+        At AstroSpider, we offer comprehensive training programs designed to equip teams with the knowledge and skills to excel in today’s data-driven world. 
+        We specialize in training for industry-leading tools such as <strong>Databricks</strong> for scalable data processing, <strong>Power BI</strong> for business intelligence reporting, 
+        and a range of other platforms to help you master data engineering and analytics technologies.
 
-    Our training services include:
-    <ul>
-        <li>Comprehensive Databricks training for data processing, data lakes, and advanced analytics</li>
-        <li>Power BI training for report building, data modeling, and real-time dashboards</li>
-        <li>Hands-on workshops for BI tools such as Tableau, Qlik, and SpotFire</li>
-        <li>Data engineering training with platforms like Spark, Airflow, and cloud data solutions</li>
-        <li>Custom training tailored to your organization’s unique data infrastructure and needs</li>
-        <li>Best practices in data pipeline design, real-time analytics, and database management</li>
-    </ul>
-</div>
+        Our training services include:
+        <ul>
+            <li>Comprehensive Databricks training for data processing, data lakes, and advanced analytics</li>
+            <li>Power BI training for report building, data modeling, and real-time dashboards</li>
+            <li>Hands-on workshops for BI tools such as Tableau, Qlik, and SpotFire</li>
+            <li>Data engineering training with platforms like Spark, Airflow, and cloud data solutions</li>
+            <li>Custom training tailored to your organization’s unique data infrastructure and needs</li>
+            <li>Best practices in data pipeline design, real-time analytics, and database management</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Spider%20teaching%20a%20class%20new.webp" alt="Right-side Image" class="right-image">
+    <!-- Image Section -->
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Spider%20teaching%20a%20class%20new.webp" alt="Training Image" class="right-image">
+  </div>
 
 </body>
 </html>
-
-
-
-
-
-
