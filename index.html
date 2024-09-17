@@ -4,6 +4,14 @@
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width">
   <title>AstroSpider</title> 
+  <script>
+    // JavaScript to detect mobile devices and redirect to a mobile page
+    document.addEventListener("DOMContentLoaded", function() {
+      if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "index-mobile.html"; // Redirect to the mobile-specific page
+      }
+    });
+  </script>
   <style>
     body {
       margin: 0;
@@ -29,7 +37,7 @@
       width: 200px;
     }
 
-/* Navigation Menu */
+    /* Navigation Menu */
     .navbar {
       margin-top: 70px;
       margin-left: 300px;
@@ -93,7 +101,6 @@
       background-color: rgb(103, 106, 200);
     }
 
-
     .section-background {
       background-color: rgb(38, 38, 38);
       padding: 20px;
@@ -135,6 +142,7 @@
       left: 350px;
       z-index: 1;
     }
+    
     /* Background Image Styling */
     .background-image {
       position: absolute;
@@ -205,5 +213,6 @@
 
 </body>
 </html>
+
 
 
