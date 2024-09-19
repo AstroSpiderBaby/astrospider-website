@@ -114,6 +114,15 @@
       height: auto;
     }
 
+    /* Style the bottom image for responsiveness */
+    .web-background-image {
+      width: 100%;
+      max-width: 1200px; /* Maximum size on large screens */
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
     /* Media Queries for Desktop */
     @media (min-width: 768px) {
       .logo {
@@ -143,6 +152,10 @@
 
       .background-image-container img {
         width: 300px; /* Adjust size for larger screens */
+      }
+
+      .web-background-image {
+        max-width: 900px; /* Adjust max width for larger screens */
       }
     }
   </style>
