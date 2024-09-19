@@ -28,15 +28,16 @@
       padding: 10px 0;
     }
 
-    .navbar a {
+    .navbar a, .dropdown .dropbtn {
       display: inline-block;
       font-size: 14px;
       color: white;
       padding: 8px;
       text-decoration: none;
+      outline: none; /* Removes outline when focused */
     }
 
-    .navbar a:hover {
+    .navbar a:hover, .dropdown:hover .dropbtn {
       background-color: rgb(103, 106, 200);
     }
 
@@ -64,6 +65,10 @@
 
     .dropdown-content a:hover {
       background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     .section-background {
@@ -143,6 +148,11 @@
     }
   </style>
   <script>
+    // JavaScript to remove initial focus on buttons to prevent highlighting
+    window.onload = function() {
+      document.activeElement.blur(); // Removes focus from any element on page load
+    };
+
     // JavaScript to toggle the dropdown on click
     function toggleDropdown(id) {
       var dropdown = document.getElementById(id);
