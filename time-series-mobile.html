@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+<html>       
+<head>      
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width">
+  <title>AstroSpider - Time Series Expertise</title> 
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, rgb(38, 38, 38) 40%, #110a02 100%);
+      color: white; 
+      font-family: Arial, sans-serif;
+      padding-top: 30px; /* Adjusted padding for mobile */
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 150px; /* Adjusted size for mobile */
+      z-index: 1001;
+    }
+
+    /* Navigation Menu */
+    .navbar {
+      margin-top: 60px;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar a, .dropdown .dropbtn {
+      display: inline-block;
+      font-size: 14px;
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      outline: none; /* Removes outline when focused */
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(103, 106, 200);
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .section-background {
+      background-color: rgb(67, 75, 79); /* Keeping original background color */
+      padding: 200px;
+      text-align: center;
+    }
+
+    .content {
+      margin: 0 auto;
+      max-width: 90%;
+      z-index: 3; /* Ensure text is in front */
+    }
+
+    .heading {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    /* Image positioned behind text */
+    .background-image-container {
+      position: absolute;
+      top: 166px; /* Adjust as needed */
+      left: 0px; /* Adjust as needed */
+      z-index: 2; /* Ensure it's behind text */
+      opacity: 0.8; /* Optional transparency */
+    }
+
+    .background-image-container img {
+      width: 200px; /* Default width, adjust as needed */
+      height: auto;
+    }
+
+    /* Media Queries for Desktop */
+    @media (min-width: 768px) {
+      .logo {
+        width: 200px;
+      }
+
+      .navbar {
+        margin-top: 70px;
+      }
+
+      .navbar a {
+        padding: 14px 16px;
+        font-size: 16px;
+      }
+
+      .content {
+        margin-top: 100px;
+      }
+
+      .heading {
+        font-size: 48px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+
+      .background-image-container img {
+        width: 300px; /* Adjust size for larger screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <a href="index-mobile.html">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
+  </a>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Services</a>
+      <div class="dropdown-content">
+        <a href="data-engineering-mobile.html">Data Engineering</a>
+        <a href="bi-solutions-mobile.html">BI Solutions</a>
+        <a href="structured-training-mobile.html">Structured Training</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Data Domain Expertise</a>
+      <div class="dropdown-content">
+        <a href="healthcare-mobile.html">Healthcare</a>
+        <a href="pharmaceuticals-mobile.html">Pharmaceuticals</a>
+        <a href="intellectual-property-mobile.html">Intellectual Property</a>
+        <a href="time-series-mobile.html">Time Series</a>
+        <a href="geothermal-drilling-mobile.html">Geothermal Drilling</a>
+        <a href="manufacturing-mobile.html">Manufacturing</a>
+        <a href="financial-mobile.html">Financial</a>
+      </div>
+    </div>
+    <a href="our-web-mobile.html">Our Web</a>
+    <a href="careers-mobile.html">Careers</a>
+    <a href="about-mobile.html">About</a>
+    <a href="contact-us-mobile.html">Contact Us</a>
+  </div>
+
+  <!-- Section Background -->
+  <div class="section-background">
+    
+    <!-- Positioned Background Image -->
+    <div class="background-image-container">
+      <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/Data-Expertise/Time%20Series%20Spider.webp" alt="Time Series Expertise Background">
+    </div>
+
+    <div class="content">
+      <div class="heading">Our Time Series Data Expertise</div>
+      <div class="description">
+        Time series data is crucial for tracking changes over time and making predictive analyses. At AstroSpider, we specialize in managing and analyzing time series data across various domains, from finance to manufacturing.
+        <ul>
+          <li><strong>Data Collection & Integration:</strong> We integrate diverse data streams like sensors, financial transactions, and IoT devices into a unified format for efficient analysis and forecasting.</li>
+          <li><strong>Data Quality & Preprocessing:</strong> Advanced data cleaning techniques like interpolation, smoothing, and normalization ensure the accuracy and reliability of time series data.</li>
+          <li><strong>Advanced Analytics & Forecasting:</strong> Our team uses models like ARIMA and machine learning algorithms like LSTM to forecast trends, detect anomalies, and analyze patterns.</li>
+          <li><strong>Real-Time Data Processing:</strong> Continuous data streams are processed using real-time frameworks for proactive decision-making.</li>
+          <li><strong>Anomaly Detection:</strong> We develop models to detect irregularities in metrics like temperature, pressure, sales, or network traffic, minimizing downtime and enhancing efficiency.</li>
+          <li><strong>Data Visualization & Dashboarding:</strong> Interactive dashboards visualize trends, seasonality, and anomalies, making complex time-based data easier to interpret and share.</li>
+          <li><strong>Custom Time Series Solutions:</strong> Tailored models for predictive maintenance, inventory management, and energy forecasting maximize the utility of your time-based data.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
