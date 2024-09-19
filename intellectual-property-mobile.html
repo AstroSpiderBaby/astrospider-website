@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">      
+<head>      
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width">
+  <title>AstroSpider</title> 
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, rgb(38, 38, 38) 40%, #110a02 100%);
+      color: white; 
+      font-family: Arial, sans-serif;
+      padding-top: 90px;
+    }
+
+    .top-bar {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(103, 106, 230);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      position: absolute;
+      top: 90px;
+      left: 20px;
+      width: 180px;
+      z-index: 1001;
+    }
+
+    /* Navigation Menu */
+    .navbar {
+      margin-top: 70px;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar a, .dropdown .dropbtn {
+      display: inline-block;
+      font-size: 14px;
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      outline: none;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(103, 106, 200);
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Section Background with original rgb(20, 30, 29) */
+    .section-background {
+      background-color: rgb(20, 30, 29); /* Retained original background color */
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .expertise-image {
+      display: block;
+      margin: 20px auto; 
+      max-width: 100%; /* Ensure it's responsive */
+      height: auto;
+    }
+
+    .expertise-text {
+      margin: 20px auto;
+      max-width: 90%;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* Media Queries for Desktop */
+    @media (min-width: 768px) {
+      .logo {
+        width: 200px;
+      }
+
+      .navbar {
+        padding: 0;
+      }
+
+      .navbar a {
+        padding: 14px 16px;
+      }
+
+      .expertise-image {
+        max-width: 400px; /* Limit the width for larger screens */
+      }
+
+      .expertise-text {
+        max-width: 70%; /* Wider text area for desktop */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar"></div>
+
+  <!-- Logo -->
+  <a href="index-mobile.html">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
+  </a>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Services</a>
+      <div class="dropdown-content">
+        <a href="data-engineering-mobile.html">Data Engineering</a>
+        <a href="bi-solutions-mobile.html">BI Solutions</a>
+        <a href="structured-training-mobile.html">Structured Training</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Data Domain Expertise</a>
+      <div class="dropdown-content">
+        <a href="healthcare-mobile.html">Healthcare</a>
+        <a href="pharmaceuticals-mobile.html">Pharmaceuticals</a>
+        <a href="intellectual-property-mobile.html">Intellectual Property</a>
+        <a href="time-series-mobile.html">Time Series</a>
+        <a href="geothermal-drilling-mobile.html">Geothermal Drilling</a>
+        <a href="manufacturing-mobile.html">Manufacturing</a>
+        <a href="financial-mobile.html">Financial</a>
+      </div>
+    </div>
+    <a href="our-web-mobile.html">Our Web</a>
+    <a href="careers-mobile.html">Careers</a>
+    <a href="about-mobile.html">About</a>
+    <a href="contact-us-mobile.html">Contact Us</a>
+  </div>
+
+  <!-- Section Background with Image and Text -->
+  <div class="section-background">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/refs/heads/Data-Expertise/Intellectual%20Property%20Spider.webp" alt="Data Spider" class="expertise-image">
+
+    <div class="expertise-text">
+      <h3>Our Data Expertise</h3>
+      <p>Handling vast amounts of data requires not just technical knowledge but also a deep understanding of data governance, integration, and advanced analytics. At AstroSpider, we specialize in end-to-end data solutions that streamline your business operations.</p>
+
+      <p><strong>Data Governance & Quality Control:</strong> We implement comprehensive governance frameworks, ensuring that your data is accurate, consistent, and accessible to authorized personnel only. Our data quality solutions focus on preventing errors, ensuring data integrity, and facilitating regulatory compliance.</p>
+
+      <p><strong>Data Integration & Interoperability:</strong> Our solutions connect disparate data sources and ensure seamless interoperability between systems, allowing for real-time access and analysis of your organization’s most valuable data assets.</p>
+
+      <p><strong>Big Data Processing:</strong> With the explosion of data sources, managing large-scale datasets can be overwhelming. We leverage advanced tools such as Apache Spark, Databricks, and cloud services to process big data efficiently and deliver actionable insights.</p>
+
+      <p><strong>Advanced Analytics & AI:</strong> Data analytics has the power to uncover trends, optimize operations, and predict future outcomes. Our team implements AI-driven analytics, machine learning models, and deep learning techniques to help businesses make data-driven decisions.</p>
+
+      <p><strong>Real-Time Data Analytics:</strong> Speed is critical in today’s fast-paced business environment. Our real-time analytics solutions ensure that you have up-to-the-minute insights, allowing for rapid response to market changes, operational inefficiencies, and customer needs.</p>
+
+      <p><strong>Data Security & Privacy:</strong> Safeguarding data is our priority. We implement encryption, access control, and compliance strategies to protect your sensitive information from unauthorized access or breaches, ensuring full data privacy and security.</p>
+
+      <p>At AstroSpider, we don’t just manage data; we transform it into a powerful tool for strategic growth and operational efficiency.</p>
+    </div>
+  </div>
+
+</body>
+</html>
