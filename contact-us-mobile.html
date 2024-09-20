@@ -27,22 +27,22 @@
       position: absolute;
       top: 70px;
       left: 20px;
-      width: 200px;
+      width: 150px;
       z-index: 1001;
     }
 
     .navbar {
       margin-top: 70px;
-      margin-left: 300px;
+      margin-left: 20px;
       overflow: hidden;
       background-color: transparent;
     }
 
     .navbar a {
       float: left;
-      font-size: 16px;
+      font-size: 14px;
       color: white;
-      padding: 14px 16px;
+      padding: 14px;
       text-decoration: none;
     }
 
@@ -52,11 +52,11 @@
     }
 
     .dropdown .dropbtn {
-      font-size: 16px;
+      font-size: 14px;
       border: none;
       outline: none;
       color: white;
-      padding: 14px 16px;
+      padding: 14px;
       background-color: inherit;
       font-family: inherit;
       margin: 0;
@@ -95,24 +95,25 @@
     }
 
     .container {
-      display: flex; /* Flexbox to keep form and image aligned side by side */
+      display: flex;
+      flex-wrap: wrap;
       margin-top: 100px;
       padding: 20px;
       gap: 20px;
     }
 
     .form-container {
-      flex: 1; /* Keeps the form in place */
-      position: relative;
+      flex: 1;
+      min-width: 300px; /* Ensures form has minimum width */
     }
 
     .section-background {
-      background-color: rgb(38, 38, 38); /* Set this to match the body background */
+      background-color: rgb(38, 38, 38);
       padding: 20px;
     }
 
     .heading {
-      font-size: 48px;
+      font-size: 36px;
       font-weight: bold;
       margin-bottom: 20px;
     }
@@ -131,7 +132,7 @@
 
     input[type="text"],
     input[type="email"] {
-      width: 80%; /* Adjust the width for "Your Name" and "Your Email" */
+      width: 100%; /* Full width for inputs */
       padding: 10px;
       margin-bottom: 10px;
       border: none;
@@ -141,14 +142,14 @@
     }
 
     textarea {
-      width: 100%; /* Full width for "Your Message" */
+      width: 100%;
       padding: 10px;
       margin-bottom: 10px;
       border: none;
       border-radius: 4px;
       background-color: #333;
       color: white;
-      height: 150px; /* Increased height for the message box */
+      height: 150px;
     }
 
     button {
@@ -168,32 +169,63 @@
     .contact-info {
       margin-top: 20px;
       font-size: 18px;
-      position: relative; /* Relative positioning for the box overlay */
     }
 
-    /* Box for 38,38,38 Background */
-    .box-overlay {
-      position: absolute;
-      background-color: rgb(38, 38, 38); /* The box color */
-      width: 1200px; /* Width of the box */
-      height: 50px; /* Height of the box */
-      top: 80px; /* Position it below the phone number */
-      left: 0px; /* Align it to the left */
-      z-index: 1; /* Ensure the box is behind the content */
-    }
-
-    /* The image container */
     .image-container {
-      position: relative;
       flex: 1;
+      min-width: 300px;
+      text-align: center; /* Center the image */
     }
 
     .right-image {
-      width: 400px; /* Adjust the size of the image */
+      width: 100%;
+      max-width: 400px;
       height: auto;
-      position: absolute; /* Allow free positioning */
-      top: 0px; /* Adjust for moving up or down */
-      left: 0px; /* Adjust for moving left or right */
+      border-radius: 8px;
+    }
+
+    /* Media Queries for Mobile */
+    @media (max-width: 768px) {
+      .logo {
+        width: 120px;
+      }
+
+      .navbar {
+        margin-left: 10px;
+      }
+
+      .navbar a,
+      .dropdown .dropbtn {
+        font-size: 12px;
+        padding: 10px;
+      }
+
+      .heading {
+        font-size: 24px;
+      }
+
+      form {
+        padding: 15px;
+      }
+
+      label {
+        font-size: 14px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        font-size: 14px;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-container {
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
@@ -263,9 +295,6 @@
     <div class="contact-info">
       <p>Email: <a href="mailto:contact@AstroSpider.net" style="color: white;">contact@AstroSpider.net</a></p>
       <p>Phone: 1-833-774-3391 (1-800-Spidey1)</p>
-      
-      <!-- The small box with 38,38,38 background -->
-      <div class="box-overlay"></div>
     </div>
   </div>
 
