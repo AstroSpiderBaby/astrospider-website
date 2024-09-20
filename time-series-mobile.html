@@ -53,6 +53,18 @@
       background-color: rgb(103, 106, 200);
     }
 
+    .navbar a, .dropdown .dropbtn {
+  display: inline-block;
+  font-size: 14px;
+  color: white; /* Set color to white */
+  padding: 8px;
+  text-decoration: none;
+  outline: none; /* Removes outline when focused */
+}
+
+.navbar a:visited, .dropdown .dropbtn:visited {
+  color: white; /* Ensures visited links remain white */
+}
     .dropdown {
       position: relative;
       display: inline-block;
@@ -173,8 +185,7 @@
 
 
     <div class="expertise-text">
-  <h3>Our Time Series Data Expertise</h3>
-      <div class="description">
+       <h3>Our Time Series Data Expertise</h3>
         <p>Time series data is crucial for tracking changes over time and making predictive analyses. At AstroSpider, we specialize in managing and analyzing time series data across various domains, from finance to manufacturing.
           <p><strong>Data Collection & Integration:</strong> We integrate diverse data streams like sensors, financial transactions, and IoT devices into a unified format for efficient analysis and forecasting.</li>
           <p><strong>Data Quality & Preprocessing:</strong> Advanced data cleaning techniques like interpolation, smoothing, and normalization ensure the accuracy and reliability of time series data.</li>
