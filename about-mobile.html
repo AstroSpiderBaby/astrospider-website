@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">      
+<head>      
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - AstroSpider</title> 
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%);
+      color: white; 
+      font-family: Arial, sans-serif;
+      padding-top: 30px; /* Adjusted padding for mobile */
+    }
+    .top-bar {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(103, 106, 230);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px; /* Adjusted for mobile */
+      left: 20px;
+      width: 150px; /* Adjusted size */
+      z-index: 1001;
+    }
+
+    /* Navigation Menu */
+    .navbar {
+      margin-top: 60px;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar a, .dropdown .dropbtn {
+      display: inline-block;
+      font-size: 14px;
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      outline: none; /* Removes outline when focused */
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(103, 106, 200);
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .section-background {
+      background-color: rgb(32, 40, 49);
+      padding: 20px;
+      position: relative;
+      margin-top: 100px; /* Adjusted for navbar */
+    }
+
+   .content {
+      margin: 0 auto;
+      max-width: 90%;
+    }
+
+    .heading {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .team-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Media Queries for Desktop */
+    @media (min-width: 768px) {
+      .logo {
+        width: 200px;
+      }
+
+      .navbar {
+        margin-top: 70px;
+      }
+
+      .navbar a {
+        padding: 14px 16px;
+        font-size: 16px;
+      }
+
+      .content {
+        margin-top: 100px;
+      }
+
+      .heading {
+        font-size: 48px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+
+      .team-image {
+        max-width: 500px;
+      }
+    }
+  </style>
+  <script>
+    // JavaScript to remove initial focus on buttons to prevent highlighting
+    window.onload = function() {
+      document.activeElement.blur(); // Removes focus from any element on page load
+    };
+
+    // JavaScript to toggle the dropdown on click
+    function toggleDropdown(id) {
+      var dropdown = document.getElementById(id);
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.style.display === "block") {
+            openDropdown.style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Logo -->
+  <a href="index-mobile.html">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
+  </a>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <a href="#" class="dropbtn" onclick="toggleDropdown('servicesDropdown')">Services</a>
+      <div id="servicesDropdown" class="dropdown-content">
+        <a href="data-engineering-mobile.html">Data Engineering</a>
+        <a href="bi-solutions-mobile.html">BI Solutions</a>
+        <a href="structured-training-mobile.html">Structured Training</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn" onclick="toggleDropdown('domainDropdown')">Data Domain Expertise</a>
+      <div id="domainDropdown" class="dropdown-content">
+        <a href="healthcare-mobile.html">Healthcare</a>
+        <a href="pharmaceuticals-mobile.html">Pharmaceuticals</a>
+        <a href="intellectual-property-mobile.html">Intellectual Property</a>
+        <a href="time-series-mobile.html">Time Series</a>
+        <a href="geothermal-drilling-mobile.html">Geothermal Drilling</a>
+        <a href="manufacturing-mobile.html">Manufacturing</a>
+        <a href="financial-mobile.html">Financial</a>
+      </div>
+    </div>
+    <a href="our-web-mobile.html">Our Web</a>
+    <a href="careers-mobile.html">Careers</a>
+    <a href="about-mobile.html">About</a>
+    <a href="contact-us-mobile.html">Contact Us</a>
+  </div>
+  
+  <!-- Section Background -->
+  <div class="section-background">
+    <div class="content">
+      <!-- Title Section -->
+      <h1 class="mission-statement">About AstroSpider</h1>
+      
+      <!-- First Paragraph and Image -->
+      <p class="description">
+        AstroSpider is a team of passionate Data Engineers, Data Architects, and BI Specialists with over 20 years of experience. From large-scale data migrations to cutting-edge BI and data engineering projects, we have seen and done it all. We started in a time before the cloud, evolving alongside technology to leverage the best tools for untangling the complex web of data that companies face today.
+      </p>
+      <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiders%20one.webp" alt="AstroSpider Team One" class="team-image">
+
+      <!-- Second Paragraph and Image -->
+      <p class="description">
+        Our expertise spans on-premises and cloud environments, allowing us to be flexible with our clients' preferred tools—because, frankly, we've mastered them all. At AstroSpider, we're more than just consultants; we're educators and partners who become part of your extended data family. We're passionate about data and stay ahead of industry trends, always ready to treat your data as if it were our own.
+      </p>
+      <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiders%20Two.webp" alt="AstroSpider Team Two" class="team-image">
+
+      <!-- Third Paragraph and Image -->
+      <p class="description">
+        We pride ourselves on delivering solutions that are not only effective but also tailored to meet the unique challenges of each client. Our commitment to excellence drives us to innovate, educate, and create meaningful, data-driven insights. Let us help you transform your data into a strategic asset.
+      </p>
+      <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiders%20Three.webp" alt="AstroSpider Team Three" class="team-image">
+    </div>
+  </div>
+
+</body>
+</html>
