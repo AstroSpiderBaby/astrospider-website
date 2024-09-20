@@ -200,41 +200,38 @@
 <body> 
   <div class="top-bar"></div>
   
-  <a href="index.html">
+ <!-- Logo -->
+  <a href="index-mobile.html">
     <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
   </a>
 
- <!-- Navigation Bar with Dropdowns -->
- <div class="navbar">
-  <div class="dropdown">
-    <button class="dropbtn">Services 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="data-engineering.html">Data Engineering</a>
-      <a href="bi-solutions.html">BI Solutions</a>
-      <a href="structured-training.html">Structured Training</a>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <a href="#" class="dropbtn" onclick="toggleDropdown('servicesDropdown')">Services</a>
+      <div id="servicesDropdown" class="dropdown-content">
+        <a href="data-engineering-mobile.html">Data Engineering</a>
+        <a href="bi-solutions-mobile.html">BI Solutions</a>
+        <a href="structured-training-mobile.html">Structured Training</a>
+      </div>
     </div>
-  </div> 
-  <a href="our-web.html">Our Web</a>
-  <div class="dropdown">
-    <button class="dropbtn">Data Domain Expertise 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="healthcare.html">Healthcare</a>
-      <a href="pharmaceuticals.html">Pharmaceuticals</a>
-      <a href="intellectual-property.html">Intellectual Property</a>
-      <a href="time-series.html">Time Series</a>
-      <a href="geothermal-drilling.html">Geothermal Drilling</a>
-      <a href="manufacturing.html">Manufacturing</a>
-      <a href="financial.html">Financial</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn" onclick="toggleDropdown('domainDropdown')">Data Domain Expertise</a>
+      <div id="domainDropdown" class="dropdown-content">
+        <a href="healthcare-mobile.html">Healthcare</a>
+        <a href="pharmaceuticals-mobile.html">Pharmaceuticals</a>
+        <a href="intellectual-property-mobile.html">Intellectual Property</a>
+        <a href="time-series-mobile.html">Time Series</a>
+        <a href="geothermal-drilling-mobile.html">Geothermal Drilling</a>
+        <a href="manufacturing-mobile.html">Manufacturing</a>
+        <a href="financial-mobile.html">Financial</a>
+      </div>
     </div>
+    <a href="our-web-mobile.html">Our Web</a>
+    <a href="careers-mobile.html">Careers</a>
+    <a href="about-mobile.html">About</a>
+    <a href="contact-us-mobile.html">Contact Us</a>
   </div>
-  <a href="careers.html">Careers</a>
-  <a href="about.html">About</a>
-  <a href="contact-us.html">Contact Us</a>
-</div>
   
   <div class="section-background">
     <div class="container">
