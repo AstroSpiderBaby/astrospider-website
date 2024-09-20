@@ -111,13 +111,14 @@
     .image-container {
       background-color: #202831; /* Fill color */
       padding: 20px; /* Add padding inside the container */
-      text-align: center; /* Center the image */
+      text-align: left; /* Align the image to the left */
       margin-top: 20px; /* Add some spacing above the container */
     }
 
-    .right-image {
+    .career-image {
       width: 80%; /* Adjust the image size */
       height: auto;
+      max-width: 400px; /* Add max-width to prevent blowing up */
     }
 
     /* Media Queries for Desktop */
@@ -151,7 +152,7 @@
         padding: 40px; /* Increase padding for larger screens */
       }
 
-      .right-image {
+      .career-image {
         width: 50%;
       }
     }
@@ -174,7 +175,7 @@
 
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
+      if (!event.target matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
           var openDropdown = dropdowns[i];
@@ -265,8 +266,3 @@
 
 </body>
 </html>
-
-
-
-
-
