@@ -10,23 +10,35 @@
       background: linear-gradient(to right, rgb(38, 38, 38) 40%, #110a02 100%);
       color: white; 
       font-family: Arial, sans-serif;
-      padding-top: 30px; /* Adjusted padding for mobile */
+      padding-top: 90px; /* Adjusted padding for mobile */
     }
 
+        .top-bar {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(103, 106, 230);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    
     .logo {
       position: absolute;
-      top: 10px;
-      left: 20px;
-      width: 150px; /* Adjusted size for mobile */
-      z-index: 1001;
+      top: 70px;
+      left: 1px;
+      width: 180px;
+      z-index: 0;
     }
+
 
     /* Navigation Menu */
     .navbar {
-      margin-top: 60px;
+      margin-top: 70px;
       text-align: center;
       padding: 10px 0;
-    }
+    } 0;
+    
 
     .navbar a, .dropdown .dropbtn {
       display: inline-block;
@@ -73,44 +85,24 @@
 
     .section-background {
       background-color: rgb(67, 75, 79); /* Keeping original background color */
-      padding: 200px;
+      padding: 20px;
+      margin-top: 20px; /* Space below the navbar */
       text-align: center;
     }
 
-    .content {
-      margin: 0 auto;
-      max-width: 90%;
-      z-index: 3; /* Ensure text is in front */
-    }
-
-    .heading {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    .description {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    ul {
-      text-align: left;
-      padding-left: 20px;
-    }
-
-    /* Image positioned behind text */
-    .background-image-container {
-      position: absolute;
-      top: 166px; /* Adjust as needed */
-      left: 0px; /* Adjust as needed */
-      z-index: 2; /* Ensure it's behind text */
-      opacity: 0.8; /* Optional transparency */
-    }
-
-    .background-image-container img {
-      width: 200px; /* Default width, adjust as needed */
+      .expertise-image {
+      display: block;
+      margin: 20px auto; 
+      max-width: 100%; /* Ensure it's responsive */
       height: auto;
+    }
+
+    .expertise-text {
+      margin: 20px auto;
+      max-width: 90%;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
     }
 
     /* Media Queries for Desktop */
@@ -120,33 +112,28 @@
       }
 
       .navbar {
-        margin-top: 70px;
+        padding: 0;
       }
 
       .navbar a {
         padding: 14px 16px;
-        font-size: 16px;
       }
 
-      .content {
-        margin-top: 100px;
+      .expertise-image {
+        max-width: 400px; /* Limit the width for larger screens */
       }
 
-      .heading {
-        font-size: 48px;
-      }
-
-      .description {
-        font-size: 18px;
-      }
-
-      .background-image-container img {
-        width: 300px; /* Adjust size for larger screens */
+      .expertise-text {
+        max-width: 70%; /* Wider text area for desktop */
       }
     }
   </style>
 </head>
 <body>
+  <!-- Top Bar -->
+  <div class="top-bar"></div>
+
+  
   <!-- Logo -->
   <a href="index-mobile.html">
     <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
@@ -179,31 +166,26 @@
     <a href="about-mobile.html">About</a>
     <a href="contact-us-mobile.html">Contact Us</a>
   </div>
-
-  <!-- Section Background -->
+  
+ <!-- Section Background with Image and Text -->
   <div class="section-background">
-    
-    <!-- Positioned Background Image -->
-    <div class="background-image-container">
-      <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/Data-Expertise/Time%20Series%20Spider.webp" alt="Time Series Expertise Background">
-    </div>
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/Data-Expertise/Time%20Series%20Spider.webp" alt="Healthcare Spider" class="expertise-image">
 
-    <div class="content">
-      <div class="heading">Our Time Series Data Expertise</div>
+
+    <div class="expertise-text">
+  <h3>Our Time Series Data Expertise</h3>
       <div class="description">
-        Time series data is crucial for tracking changes over time and making predictive analyses. At AstroSpider, we specialize in managing and analyzing time series data across various domains, from finance to manufacturing.
-        <ul>
-          <li><strong>Data Collection & Integration:</strong> We integrate diverse data streams like sensors, financial transactions, and IoT devices into a unified format for efficient analysis and forecasting.</li>
-          <li><strong>Data Quality & Preprocessing:</strong> Advanced data cleaning techniques like interpolation, smoothing, and normalization ensure the accuracy and reliability of time series data.</li>
-          <li><strong>Advanced Analytics & Forecasting:</strong> Our team uses models like ARIMA and machine learning algorithms like LSTM to forecast trends, detect anomalies, and analyze patterns.</li>
-          <li><strong>Real-Time Data Processing:</strong> Continuous data streams are processed using real-time frameworks for proactive decision-making.</li>
-          <li><strong>Anomaly Detection:</strong> We develop models to detect irregularities in metrics like temperature, pressure, sales, or network traffic, minimizing downtime and enhancing efficiency.</li>
-          <li><strong>Data Visualization & Dashboarding:</strong> Interactive dashboards visualize trends, seasonality, and anomalies, making complex time-based data easier to interpret and share.</li>
-          <li><strong>Custom Time Series Solutions:</strong> Tailored models for predictive maintenance, inventory management, and energy forecasting maximize the utility of your time-based data.</li>
-        </ul>
+        <p>Time series data is crucial for tracking changes over time and making predictive analyses. At AstroSpider, we specialize in managing and analyzing time series data across various domains, from finance to manufacturing.
+          <p><strong>Data Collection & Integration:</strong> We integrate diverse data streams like sensors, financial transactions, and IoT devices into a unified format for efficient analysis and forecasting.</li>
+          <p><strong>Data Quality & Preprocessing:</strong> Advanced data cleaning techniques like interpolation, smoothing, and normalization ensure the accuracy and reliability of time series data.</li>
+          <p><strong>Advanced Analytics & Forecasting:</strong> Our team uses models like ARIMA and machine learning algorithms like LSTM to forecast trends, detect anomalies, and analyze patterns.</li>
+          <p><strong>Real-Time Data Processing:</strong> Continuous data streams are processed using real-time frameworks for proactive decision-making.</li>
+          <p><strong>Anomaly Detection:</strong> We develop models to detect irregularities in metrics like temperature, pressure, sales, or network traffic, minimizing downtime and enhancing efficiency.</li>
+          <p><strong>Data Visualization & Dashboarding:</strong> Interactive dashboards visualize trends, seasonality, and anomalies, making complex time-based data easier to interpret and share.</li>
+          <p><strong>Custom Time Series Solutions:</strong> Tailored models for predictive maintenance, inventory management, and energy forecasting maximize the utility of your time-based data.</li>
       </div>
     </div>
-  </div>
+
 
 </body>
 </html>
