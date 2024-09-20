@@ -1,0 +1,211 @@
+<!DOCTYPE html> 
+<html>       
+<head>      
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width">
+  <title>AstroSpider</title> 
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, rgb(38, 38, 38) 40%, #110a02 100%);
+      color: white; 
+      font-family: Arial, sans-serif;
+      padding-top: 90px;
+    }
+    .top-bar {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(103, 106, 230);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+      .logo {
+      position: absolute;
+      top: 70px;
+      left: 1px;
+      width: 180px;
+      z-index: 0;
+    }
+
+
+    /* Navigation Menu */
+    .navbar {
+      margin-top: 70px;
+      text-align: center;
+      padding: 10px 0;
+    } 
+    
+    
+    .navbar a, .dropdown .dropbtn {
+      display: inline-block;
+      font-size: 14px;
+      color: white;
+      padding: 8px;
+      text-decoration: none;
+      outline: none; /* Removes outline when focused */
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(103, 106, 200);
+    }
+
+    .navbar a, .dropdown .dropbtn {
+      display: inline-block;
+      font-size: 14px;
+      color: white; /* Set color to white */
+      padding: 8px;
+      text-decoration: none;
+      outline: none; /* Removes outline when focused */
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(103, 106, 200);
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .section-background {
+      background-color: rgb(27, 26, 29);
+      padding: 20px;
+      margin-top: 20px; /* Space below the navbar */
+      text-align: center;
+    }
+
+       .expertise-image {
+      display: block;
+      margin: 20px auto; 
+      max-width: 100%; /* Ensure it's responsive */
+      height: auto;
+    }
+
+    .expertise-text {
+      margin: 20px auto;
+      max-width: 90%;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* Media Queries for Desktop */
+    @media (min-width: 768px) {
+      .logo {
+        width: 200px;
+      }
+
+      .navbar {
+        padding: 0;
+      }
+
+      .navbar a {
+        padding: 14px 16px;
+      }
+
+      .expertise-image {
+        max-width: 400px; /* Limit the width for larger screens */
+      }
+
+      .expertise-text {
+        max-width: 70%; /* Wider text area for desktop */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar"></div>
+
+  
+  <!-- Logo -->
+  <a href="index-mobile.html">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/AstroSpiderLogo.png" alt="AstroSpider Logo" class="logo">
+  </a>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Services</a>
+      <div class="dropdown-content">
+        <a href="data-engineering-mobile.html">Data Engineering</a>
+        <a href="bi-solutions-mobile.html">BI Solutions</a>
+        <a href="structured-training-mobile.html">Structured Training</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Data Domain Expertise</a>
+      <div class="dropdown-content">
+        <a href="healthcare-mobile.html">Healthcare</a>
+        <a href="pharmaceuticals-mobile.html">Pharmaceuticals</a>
+        <a href="intellectual-property-mobile.html">Intellectual Property</a>
+        <a href="time-series-mobile.html">Time Series</a>
+        <a href="geothermal-drilling-mobile.html">Geothermal Drilling</a>
+        <a href="manufacturing-mobile.html">Manufacturing</a>
+        <a href="financial-mobile.html">Financial</a>
+      </div>
+    </div>
+    <a href="our-web-mobile.html">Our Web</a>
+    <a href="careers-mobile.html">Careers</a>
+    <a href="about-mobile.html">About</a>
+    <a href="contact-us-mobile.html">Contact Us</a>
+  </div>
+  
+
+  
+ <!-- Section Background with Image and Text -->
+  <div class="section-background">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/Data-Expertise/Drilling%20Spider.webp" alt="Geothermal Drilling Spider" class="expertise-image">
+
+    <div class="expertise-text">
+      <h3>Our Geothermal Drilling Data Expertise</h3>
+      <p>Geothermal drilling involves extensive data management, from geological surveys to real-time drilling operations. At AstroSpider, we specialize in leveraging data to enhance drilling efficiency, safety, and success rates.</p>
+
+      <p><strong>Geological Data Analysis:</strong> Our team is skilled in analyzing geological data, including seismic surveys, well logs, and geophysical measurements. We utilize advanced data processing techniques to identify potential geothermal reservoirs, ensuring informed drilling decisions.</p>
+
+      <p><strong>Drilling Operations Monitoring:</strong> We provide real-time monitoring solutions for drilling operations, allowing you to track parameters such as drilling speed, temperature, pressure, and mud flow. By analyzing this data, we help optimize drilling performance, reduce downtime, and prevent costly blowouts.</p>
+
+      <p><strong>Data Integration & Interpretation:</strong> Geothermal drilling projects generate vast amounts of data from various sources, such as sensors, equipment logs, and geological models. AstroSpider excels in integrating this diverse data into a coherent framework, enabling a comprehensive understanding of the drilling environment.</p>
+
+      <p><strong>Regulatory Compliance & Environmental Monitoring:</strong> Geothermal projects are subject to strict environmental regulations. Our expertise includes managing compliance data, monitoring emissions, and ensuring that drilling activities meet environmental standards. We provide the data management tools necessary to stay compliant with local, national, and international regulations.</p>
+
+      <p><strong>Predictive Maintenance & Equipment Health:</strong> We leverage data analytics to monitor the health of drilling equipment. By predicting potential failures and recommending maintenance actions, we help reduce operational costs and enhance drilling efficiency.</p>
+
+      <p><strong>Data Quality & Standardization:</strong> Ensuring data quality is crucial for reliable drilling operations. AstroSpider offers data cleaning, validation, and standardization services to create a single source of truth for geothermal drilling projects, facilitating better decision-making.</p>
+
+      <p><strong>Risk Assessment & Decision Support:</strong> Drilling operations are inherently risky. Our advanced analytics provide real-time risk assessments, helping you make informed decisions during drilling operations. From geological risks to equipment failure, we help mitigate potential hazards.</p>
+
+      <p>At AstroSpider, we transform geothermal drilling data into actionable insights, driving operational efficiency, regulatory compliance, and environmental sustainability in the pursuit of clean energy.</p>
+    </div>
+  </div>
+
+</body>
+</html>
