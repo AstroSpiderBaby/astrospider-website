@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2024 by AstroSpiderBaby (http://jsbin.com/yovegix/4/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
-
-<html lang="en">      
-<head>      
+<html lang="en">
+<head>
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Engineering - AstroSpider</title> 
   <style>
-    body {
+     body {
       margin: 0;
       background: linear-gradient(to right, rgb(38, 38, 38) 30%, #110a02 50%);
       color: white; 
       font-family: Arial, sans-serif;
-      padding-top: 90px;
+      padding-top: 140px;
     }
 
     .top-bar {
@@ -35,14 +25,14 @@ Released under the MIT license: http://jsbin.mit-license.org
 
     .logo {
       position: absolute;
-      top: 80px;
+      top: 71px;
       left: 20px;
       width: 200px;
       z-index: 1001;
     }
 
     .navbar {
-      margin-top: 70px;
+      margin-top: 0;
       margin-left: 300px;
       overflow: hidden;
       background-color: transparent;
@@ -104,17 +94,17 @@ Released under the MIT license: http://jsbin.mit-license.org
       background-color: rgb(103, 106, 200);
     }
 
-    .content {
-      margin-top: 5px;
-      margin-left: 90px;
-      max-width: 800px;
-      position: relative;
-      z-index: 1;
+    .section-background {
+      background-color: #110a02;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
     }
 
-    .section-background {
-      background-color: #262626;
-      padding: 20px;
+    .content {
+      max-width: 60%;
     }
 
     .heading {
@@ -125,16 +115,24 @@ Released under the MIT license: http://jsbin.mit-license.org
 
     .description {
       font-size: 18px;
-       font-weight: bold;
       line-height: 1.8;
     }
 
     .right-image {
-      position: absolute;
-      width: 960px;
-      z-index: 0;
-      top: 205px;
-      left: 920px;
+      width: 40%; /* Adjust width to fit on the right side */
+      height: auto;
+    }
+
+    /* Adjust layout for smaller screens */
+    @media (max-width: 768px) {
+      .section-background {
+        flex-direction: column;
+      }
+
+      .right-image {
+        width: 100%;
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
@@ -176,6 +174,8 @@ Released under the MIT license: http://jsbin.mit-license.org
   <a href="about.html">About</a>
   <a href="contact-us.html">Contact Us</a>
 </div>
+
+  <!-- Section with content and image -->
   <div class="section-background">
     <div class="content">
       <div class="heading">Business Intelligence Solutions</div>
@@ -183,7 +183,6 @@ Released under the MIT license: http://jsbin.mit-license.org
       At AstroSpider, our Business Intelligence services empower organizations to transform raw data into meaningful insights for better decision-making. 
       We specialize in leveraging industry-leading BI platforms such as <strong>Power BI</strong>, <strong>SpotFire</strong>, <strong>QLIK Sense</strong>, 
       <strong>Tableau</strong>, and <strong>SSRS</strong> to create interactive dashboards, reports, and analytics that provide real-time, actionable intelligence.
-
 
         Our services include:
         <ul>
@@ -196,10 +195,10 @@ Released under the MIT license: http://jsbin.mit-license.org
         </ul>
       </div>
     </div>
-  </div>
 
-  <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Image%20for%20BI%20web%20page.%20Spider%20baby.webp" alt="Right-side Image" class="right-image">
+    <img src="https://raw.githubusercontent.com/AstroSpiderBaby/AstrosAssets/main/Image%20for%20BI%20web%20page.%20Spider%20baby.webp" alt="Right-side Image" class="right-image">
+
+  </div>
 
 </body>
 </html>
-
