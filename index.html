@@ -29,6 +29,19 @@
       top: 0;
       left: 0;
       z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-bar a {
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+      padding: 14px 24px;
+      border: 2px solid white;
+      border-radius: 25px;
+      background-color: rgb(103, 106, 230); /* Match top-bar background */
     }
 
     .logo {
@@ -39,7 +52,7 @@
       z-index: 1001;
     }
 
-     .navbar {
+    .navbar {
       margin-top: 0;
       margin-left: 300px;
       overflow: hidden;
@@ -102,7 +115,6 @@
       background-color: rgb(103, 106, 200);
     }
 
-
     .section-background {
       background-color: rgb(38, 38, 38);
       padding: 20px;
@@ -157,8 +169,10 @@
   </style>
 </head>
 <body> 
-  <!-- Top Bar -->
-  <div class="top-bar"></div>
+  <!-- Top Bar with AI Ready Link -->
+  <div class="top-bar">
+    <a href="AI_Ready.html">Is Your Data AI Ready?</a>
+  </div>
   
   <!-- Wrap the logo image in an anchor tag -->
   <a href="index.html">
@@ -215,6 +229,3 @@
 
 </body>
 </html>
-
-
-
